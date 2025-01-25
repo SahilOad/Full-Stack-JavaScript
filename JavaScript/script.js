@@ -354,6 +354,9 @@
 //     console.log(i);
 // }
 
+
+//Function
+
 // function myFunc(theObject) {
 //     theObject.make = "Toyota";
 //   }
@@ -368,3 +371,91 @@
 //   myFunc(myCar);
 //   console.log(myCar.make); // "Toyota"
 
+
+
+// function sum(value1, value2){
+//     // let num1 = 16;
+//     // let num2 = 44;
+  
+  
+//     console.log('Addition of Two Number are: ',value1 + value2);
+//   }
+  
+  
+  
+//   sum(22, 33);
+//   sum(22,55);
+//   sum(22,77);
+//   sum(22,12);
+//   sum(22,9);
+
+// Normal Function and Funtion with parameters
+
+// Function with return type
+
+// function sum(val1, val2){
+//     let result = val1 + val2;
+//     return result;
+// }
+
+// let add = sum(10,22);
+// console.log(add);
+
+// let add1 = sum(15,12);
+// console.log(add1);
+
+// function URL(url,domain){
+//     let con = 'https://';
+//     let result = con + url + domain;
+//     return result;
+// }
+
+// let sahilsite = URL ('sahil','.com')
+// console.log(sahilsite);
+
+// function sum(arr){
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         sum = sum + arr[1];
+//     }
+//     return sum;
+// }
+
+// let sumarray = [1,2,3,4,5,6,7,8];
+// let arrresult = sum(sumarray);
+// console.log(arrresult);
+
+// function sahil(){
+//     console.log(arguments);
+//     let sum = 0;
+//     for (let i = 0; i < arguments.length; i++){
+//         sum = sum + arguments[1];
+//     }
+//     return sum;
+// }
+
+// console.log(sahil(7,8,9,10,11,12,14,15));
+
+// let jaimin = (var1, var2) => {
+//     console.log('Main Bhagwan Hun', var1, var2);
+// }
+
+// jaimin(1,2);
+
+//Object
+
+// let userName = {
+//     firstname: 'Sahil',
+//     lastname: 'Oad',
+//     role: 'admin',
+//     loginCount: 25,
+// }
+
+// console.log(userName.role);
+
+// userName.loginCount = 61;
+// console.log(userName);
+
+// for (let x in userName){
+//     console.log(userName[x]);
+// }
