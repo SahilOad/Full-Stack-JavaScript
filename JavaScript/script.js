@@ -504,17 +504,37 @@
 
 // EXP 4
 
-const obj4 = Object.create({})
-Object.defineProperty(obj4, 'book', {
-  // icon: '🎈'
-  get: () => '🎈', 
-  enumerable: true
-})
+// const obj4 = Object.create({})
+// Object.defineProperty(obj4, 'book', {
+//   // icon: '🎈'
+//   get: () => '🎈', 
+//   enumerable: true
+// })
 
-// console.log(obj4);
-// console.log(obj4.book);
-// console.log(Object.getPrototypeOf(obj4));
+// // console.log(obj4);
+// // console.log(obj4.book);
+// // console.log(Object.getPrototypeOf(obj4));
 
-for (k in obj4){
-  console.log("Value is: ", k);
-}
+// for (k in obj4){
+//   console.log("Value is: ", k);
+// }
+
+let pen = 'sahil'
+
+// EXP 5
+
+const obj5 = {
+  comics : 'marvel',
+  pen: '',
+  printComic: function(){
+  this.pen += '🖊'  
+  console.log(this);
+}, 
+// printaComic: () => {
+//   // this.pen += '🖊'   
+//   console.log(this);
+//   }
+// }
+
+console.log(obj5.printComic().printComic().printComic());
+// console.log(obj5.printaComic());
