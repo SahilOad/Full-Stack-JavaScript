@@ -507,9 +507,14 @@
 const obj4 = Object.create({})
 Object.defineProperty(obj4, 'book', {
   // icon: '🎈'
-  get: () => '🎈' 
+  get: () => '🎈', 
+  enumerable: true
 })
 
-console.log(obj4);
-console.log(obj4.book);
-console.log(Object.getPrototypeOf(obj4));
+// console.log(obj4);
+// console.log(obj4.book);
+// console.log(Object.getPrototypeOf(obj4));
+
+for (k in obj4){
+  console.log("Value is: ", k);
+}
