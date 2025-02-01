@@ -540,3 +540,59 @@
 // console.log(obj5.printComic().printComic().printComic());
 // console.log(obj5.printaComic());
 
+// Prototype
+
+let myHeros =  ["thor", "spiderman"]
+let dcHeros =  ["batman", "superman", "black adam"]
+
+let heropower = {
+    thor: "hammer",
+    spideran: "sling",
+
+    getSpiderPower: function(){
+        console.log('Spidy power is ${this.spiderman}');
+    }
+}
+
+Object.prototype.sahil = function(){
+    console.log('Sahil is present in all objects');
+}
+Array.prototype.heySahil = function(){
+    console.log('Sahil says hello')
+}
+myHeros.sahil()
+
+//inheritance
+
+const User = {
+    name: "top name",
+    email: "topuser@gmail.com"
+}
+
+const Teacher = {
+    makeVideos: true
+}
+
+const TeachingSupport = {
+    isAvailable: false
+}
+
+const TSAssistant = {
+    makeAssignment: 'JS assignment',
+    fullTime: true,
+    __proto__: TeachingSupport 
+}
+
+Teacher.__proto__ = User 
+
+// Modern Syntax
+
+Object.setPrototypeOf(TeachingSupport, Teacher) 
+
+// Goal: get truelength of string
+
+String.prototype.truelength = function(){
+    console.log('true length is: ${this.trim()}');
+}
+
+let myname = 'sahil   '
