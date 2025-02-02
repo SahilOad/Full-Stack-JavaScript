@@ -595,4 +595,4 @@ String.prototype.truelength = function(){
     console.log('true length is: ${this.trim()}');
 }
 
-let myname = 'sahil   '
+// let myname = 'sahil   '
