@@ -542,57 +542,113 @@
 
 // Prototype
 
-let myHeros =  ["thor", "spiderman"]
-let dcHeros =  ["batman", "superman", "black adam"]
+// let myHeros =  ["thor", "spiderman"]
+// let dcHeros =  ["batman", "superman", "black adam"]
 
-let heropower = {
-    thor: "hammer",
-    spideran: "sling",
+// let heropower = {
+//     thor: "hammer",
+//     spideran: "sling",
 
-    getSpiderPower: function(){
-        console.log('Spidy power is ${this.spiderman}');
-    }
-}
+//     getSpiderPower: function(){
+//         console.log('Spidy power is ${this.spiderman}');
+//     }
+// }
 
-Object.prototype.sahil = function(){
-    console.log('Sahil is present in all objects');
-}
-Array.prototype.heySahil = function(){
-    console.log('Sahil says hello')
-}
-myHeros.sahil()
+// Object.prototype.sahil = function(){
+//     console.log('Sahil is present in all objects');
+// }
+// Array.prototype.heySahil = function(){
+//     console.log('Sahil says hello')
+// }
+// myHeros.sahil()
 
-//inheritance
+// //inheritance
 
-const User = {
-    name: "top name",
-    email: "topuser@gmail.com"
-}
+// const User = {
+//     name: "top name",
+//     email: "topuser@gmail.com"
+// }
 
-const Teacher = {
-    makeVideos: true
-}
+// const Teacher = {
+//     makeVideos: true
+// }
 
-const TeachingSupport = {
-    isAvailable: false
-}
+// const TeachingSupport = {
+//     isAvailable: false
+// }
 
-const TSAssistant = {
-    makeAssignment: 'JS assignment',
-    fullTime: true,
-    __proto__: TeachingSupport 
-}
+// const TSAssistant = {
+//     makeAssignment: 'JS assignment',
+//     fullTime: true,
+//     __proto__: TeachingSupport 
+// }
 
-Teacher.__proto__ = User 
+// Teacher.__proto__ = User 
 
-// Modern Syntax
+// // Modern Syntax
 
-Object.setPrototypeOf(TeachingSupport, Teacher) 
+// Object.setPrototypeOf(TeachingSupport, Teacher) 
 
-// Goal: get truelength of string
+// // Goal: get truelength of string
 
-String.prototype.truelength = function(){
-    console.log('true length is: ${this.trim()}');
-}
+// String.prototype.truelength = function(){
+//     console.log('true length is: ${this.trim()}');
+// }
 
 // let myname = 'sahil   '
+
+
+// DOM
+// console.log(document);
+// console.log(window.document);
+// console.log(document.documentElement);
+
+// console.log(document.head);
+// console.log(document.body);
+// console.log(document.body.firstElementChild);
+
+let val = document.getElementByClassName("tech")
+console.log(val)
+console.log(val[0].innerText)
+console.log(val[1].innerText)
+
+val[1].innerHTML = "Sahil"
+val[2].innerText = "<h1>Hello Sahuuu</h1>"
+
+// by tag name
+// by tag
+// Query Selector
+
+let h1 = document.querySelector("#fsjs2").innerText
+console.log(h1)
+
+let value = document.querySelector("p").style.backgroundColor = "red"
+
+
+//Alert
+
+alert("Hello World")
+setTimeout(() => {
+    alert("Hello JavaScript Developer")
+}, 2000);
+
+//Comfirm Box
+
+let val = confirm("Are you sure?")
+if(val){
+    document.getElementById("js".innerHTML = "He/She Pressed OK")
+}
+else{
+    document.getElementById("js".innerHTML = "He/She Pressed Cancel")
+}
+
+
+// Prompt
+
+let value1 = prompt("Solve This 20 - 10");
+if (value1 == 10){
+    document.getElementById("js").innerText = "Success"
+}
+else {
+    document.getElementById("js").innerText = "Fail"
+}
