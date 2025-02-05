@@ -607,48 +607,70 @@
 // console.log(document.body);
 // console.log(document.body.firstElementChild);
 
-let val = document.getElementByClassName("tech")
-console.log(val)
-console.log(val[0].innerText)
-console.log(val[1].innerText)
+// let val = document.getElementByClassName("tech")
+// console.log(val)
+// console.log(val[0].innerText)
+// console.log(val[1].innerText)
 
-val[1].innerHTML = "Sahil"
-val[2].innerText = "<h1>Hello Sahuuu</h1>"
+// val[1].innerHTML = "Sahil"
+// val[2].innerText = "<h1>Hello Sahuuu</h1>"
 
 // by tag name
 // by tag
 // Query Selector
 
-let h1 = document.querySelector("#fsjs2").innerText
-console.log(h1)
+// let h1 = document.querySelector("#fsjs2").innerText
+// console.log(h1)
 
-let value = document.querySelector("p").style.backgroundColor = "red"
-
-
-//Alert
-
-alert("Hello World")
-setTimeout(() => {
-    alert("Hello JavaScript Developer")
-}, 2000);
-
-//Comfirm Box
-
-let val = confirm("Are you sure?")
-if(val){
-    document.getElementById("js".innerHTML = "He/She Pressed OK")
-}
-else{
-    document.getElementById("js".innerHTML = "He/She Pressed Cancel")
-}
+// let value = document.querySelector("p").style.backgroundColor = "red"
 
 
-// Prompt
+// //Alert
 
-let value1 = prompt("Solve This 20 - 10");
-if (value1 == 10){
-    document.getElementById("js").innerText = "Success"
-}
-else {
-    document.getElementById("js").innerText = "Fail"
-}
+// alert("Hello World")
+// setTimeout(() => {
+//     alert("Hello JavaScript Developer")
+// }, 2000);
+
+// //Comfirm Box
+
+// let val = confirm("Are you sure?")
+// if(val){
+//     document.getElementById("js".innerHTML = "He/She Pressed OK")
+// }
+// else{
+//     document.getElementById("js".innerHTML = "He/She Pressed Cancel")
+// }
+
+
+// // Prompt
+
+// let value1 = prompt("Solve This 20 - 10");
+// if (value1 == 10){
+//     document.getElementById("js").innerText = "Success"
+// }
+// else {
+//     document.getElementById("js").innerText = "Fail"
+// }
+
+const list = `
+<li>Wakash</li>
+<li>Aashesh</li>
+<li>Rahul</li>
+`;
+
+//Create Element on screen
+
+const ul = document.querySelector("ul")
+ul.innerHTML = list;
+
+let title = document.createElement("h1")
+title.className = "title";
+title.style.textAlign = "center";
+title.style.color = "white";
+title.style.listStyleType = "none";
+title.textContent = "Creating New Element in DOM Day 2";
+console.log("title");
+document.body.appendChild(title)
+
+// Remove Child Assignment
