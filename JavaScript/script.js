@@ -706,10 +706,10 @@
 
 // We studied EventListener by clicking mouse etc,
 
-document.addEventListener("dblclick", hello)
-    function hello(){
-        document.getElementById("js").innerText = "Mouse Clicked"
-    }
+// document.addEventListener("dblclick", hello)
+//     function hello(){
+//         document.getElementById("js").innerText = "Mouse Clicked"
+//     }
 
     /** 
     click
@@ -724,8 +724,30 @@ document.addEventListener("dblclick", hello)
     onload 
     **/
 
-    document.addEventListener("mouseover", hello)
-    function hello(){   
-        document.getElementById("js").innerText = "Hello Mouse Entered"
+    // document.addEventListener("mouseover", hello)
+    // function hello(){   
+    //     document.getElementById("js").innerText = "Hello Mouse Entered"
+    // }
+
+
+
+    // We made a random color changer 
+
+    const btn= document.getElementById("button");
+
+    const randomColor = () => {
+        let val = '0123456789ABCDEF';
+        let cons = '#';
+        for (let i = 0; i < 6; i++ ) {
+            cons = cons + val[Math.floor(Math.random() * 16)];
+        }
+        return cons;
+    };
+
+    console.log(randomColor());
+
+    function changeRandomColor(){
+        document.body.style.backgroundColor = randomColor();
     }
 
+    btn.addEventListener("click", changeRandomColor);
