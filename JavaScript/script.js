@@ -656,50 +656,76 @@
 
 // We studied how to create elements on screen and made a games too 
 
-const list = `
-<li>Wakash</li>
-<li>Aashesh</li>
-<li>Rahul</li>
-`;
 
-//Create Element on screen
 
-const ul = document.querySelector("ul")
-ul.innerHTML = list;
+// const list = `
+// <li>Wakash</li>
+// <li>Aashesh</li>
+// <li>Rahul</li>
+// `;
 
-let title = document.createElement("h1")
-title.className = "title";
-title.style.textAlign = "center";
-title.style.color = "white";
-title.style.listStyleType = "none";
-title.textContent = "Creating New Element in DOM Day 2";
-console.log("title");
-document.body.appendChild(title)
+// //Create Element on screen
 
-// Remove Child Assignment
+// const ul = document.querySelector("ul")
+// ul.innerHTML = list;
 
-// For Loop
-for (let i = 0; i < 3; i++) {
-    let pra = document.createElement("p")
-    pra.className = "FSFS";
-    pra.style.fontSize = "16px"
-    console.log(pra)
-    pra.textContent = i;
-    document.body.appendChild(pra)
-}
+// let title = document.createElement("h1")
+// title.className = "title";
+// title.style.textAlign = "center";
+// title.style.color = "white";
+// title.style.listStyleType = "none";
+// title.textContent = "Creating New Element in DOM Day 2";
+// console.log("title");
+// document.body.appendChild(title)
 
-function maths(){
-    let value = prompt("Solve This 50 - 30");
-    if (value == 20){
-        document.getElementById("js").innerText = "Success Redirect";
-        document.getElementById("fsjs2").style.backgroundColor = "Green";
+// // Remove Child Assignment
 
+// // For Loop
+// for (let i = 0; i < 3; i++) {
+//     let pra = document.createElement("p")
+//     pra.className = "FSFS";
+//     pra.style.fontSize = "16px"
+//     console.log(pra)
+//     pra.textContent = i;
+//     document.body.appendChild(pra)
+// }
+
+// function maths(){
+//     let value = prompt("Solve This 50 - 30");
+//     if (value == 20){
+//         document.getElementById("js").innerText = "Success Redirect";
+//         document.getElementById("fsjs2").style.backgroundColor = "Green";
+
+//     }
+//     else {
+//         document.getElementById("js").innerText = "Fail Try again";
+//         document.getElementById("fsjs2").style.backgroundColor = "Red";
+
+//     }
+// }
+
+// We studied EventListener by clicking mouse etc,
+
+document.addEventListener("dblclick", hello)
+    function hello(){
+        document.getElementById("js").innerText = "Mouse Clicked"
     }
-    else {
-        document.getElementById("js").innerText = "Fail Try again";
-        document.getElementById("fsjs2").style.backgroundColor = "Red";
 
+    /** 
+    click
+    dblclick
+    mouseenter
+    mouseleave
+    moveover
+    input
+    keydown
+    keyup
+    keypress
+    onload 
+    **/
+
+    document.addEventListener("mouseover", hello)
+    function hello(){   
+        document.getElementById("js").innerText = "Hello Mouse Entered"
     }
-}
-
 
