@@ -653,6 +653,9 @@
 //     document.getElementById("js").innerText = "Fail"
 // }
 
+
+// We studied how to create elements on screen and made a games too 
+
 const list = `
 <li>Wakash</li>
 <li>Aashesh</li>
@@ -674,3 +677,29 @@ console.log("title");
 document.body.appendChild(title)
 
 // Remove Child Assignment
+
+// For Loop
+for (let i = 0; i < 3; i++) {
+    let pra = document.createElement("p")
+    pra.className = "FSFS";
+    pra.style.fontSize = "16px"
+    console.log(pra)
+    pra.textContent = i;
+    document.body.appendChild(pra)
+}
+
+function maths(){
+    let value = prompt("Solve This 50 - 30");
+    if (value == 20){
+        document.getElementById("js").innerText = "Success Redirect";
+        document.getElementById("fsjs2").style.backgroundColor = "Green";
+
+    }
+    else {
+        document.getElementById("js").innerText = "Fail Try again";
+        document.getElementById("fsjs2").style.backgroundColor = "Red";
+
+    }
+}
+
+
